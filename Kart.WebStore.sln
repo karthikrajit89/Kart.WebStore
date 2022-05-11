@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kart.WebStore.Domain", "Kart.WebStore.Domain\Kart.WebStore.Domain.csproj", "{AB4776B7-1871-43F0-A970-A56734BFF9D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kart.WebStore.Api", "Kart.WebStore.Api\Kart.WebStore.Api.csproj", "{EECF80AE-0BE3-4EBA-98E2-6830F1A2FB9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kart.WebStore.Infrastructure", "Kart.WebStore.Infrastructure\Kart.WebStore.Infrastructure.csproj", "{B4E8BE0C-BBFE-485E-9D74-30D6321B6175}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB4776B7-1871-43F0-A970-A56734BFF9D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB4776B7-1871-43F0-A970-A56734BFF9D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB4776B7-1871-43F0-A970-A56734BFF9D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB4776B7-1871-43F0-A970-A56734BFF9D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EECF80AE-0BE3-4EBA-98E2-6830F1A2FB9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EECF80AE-0BE3-4EBA-98E2-6830F1A2FB9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EECF80AE-0BE3-4EBA-98E2-6830F1A2FB9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EECF80AE-0BE3-4EBA-98E2-6830F1A2FB9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4E8BE0C-BBFE-485E-9D74-30D6321B6175}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4E8BE0C-BBFE-485E-9D74-30D6321B6175}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4E8BE0C-BBFE-485E-9D74-30D6321B6175}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4E8BE0C-BBFE-485E-9D74-30D6321B6175}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F679BB44-829E-4539-92C1-5354EF494117}
+	EndGlobalSection
+EndGlobal
