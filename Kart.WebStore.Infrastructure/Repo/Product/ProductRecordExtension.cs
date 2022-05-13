@@ -17,6 +17,7 @@ namespace Kart.WebStore.Infrastructure
             productRecord.NewCollection = product.NewCollection;
             productRecord.DiscountPercent = product.DiscountPercent;
             productRecord.ImageUrl = product.ImageUrl;
+            productRecord.Description = product.Description;    
             return productRecord;
 
         }
@@ -32,6 +33,7 @@ namespace Kart.WebStore.Infrastructure
             model.NewCollection = data.NewCollection;
             model.DiscountPercent = data.DiscountPercent;
             model.ImageUrl = data.ImageUrl;
+            model.Description = data.Description;       
             return model;   
         }
     }

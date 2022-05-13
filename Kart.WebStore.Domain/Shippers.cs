@@ -7,7 +7,8 @@ namespace Kart.WebStore.Domain
         public Guid? Id { get; set; }
         public string Mode { get; set; } = null!;
         public string ShippingType { get; set; } = null!;
-        public decimal ShippingPrice { get; set; }  
+        public decimal ShippingPrice { get; set; }
+        public string ShippingAddress { get; set; } = null!;
 
     }
 }

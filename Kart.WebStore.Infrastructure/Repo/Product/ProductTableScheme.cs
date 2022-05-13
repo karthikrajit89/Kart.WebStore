@@ -11,5 +11,7 @@ namespace Kart.WebStore.Infrastructure.Repo.Product
         public const string NewCollection = "NewCollection";
         public const string DiscountPercent = "DiscountPercent";
         public const string ImageUrl = "ImageUrl";
+        public const string Description = "Description";
+
     }
 }

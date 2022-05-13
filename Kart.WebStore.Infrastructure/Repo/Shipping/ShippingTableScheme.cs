@@ -8,5 +8,6 @@ namespace Kart.WebStore.Infrastructure.Repo.Shipping
         public const string ShippingMode = "ShippingMode";
         public const string ShippingType = "ShippingType";
         public const string ShippingPrice = "ShippingPrice";
+        public const string ShippingAddress = "ShippingAddress";
     }
 }

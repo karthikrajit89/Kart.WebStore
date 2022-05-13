@@ -37,7 +37,7 @@ namespace Kart.WebStore.Api.Controllers
         {
             if(order == null)   
                 throw new ArgumentNullException(nameof(order));
-            if (order.ProductId == Guid.Empty )
+            if (order.CartFinalList.Any(x=>String.IsNullOrEmpty(x.ProductId)))
                 throw new InvalidDataException("Cannot create order for No product");
             return await _orderServices.CreateOrderAsync(order);
             

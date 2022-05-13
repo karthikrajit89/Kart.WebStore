@@ -7,6 +7,7 @@
         public string ProductCollectionName { get; set; } = null!;
         public string OrderCollectionName { get; set; } = null!;
         public string ShippingCollectionName { get; set; } = null!;
+        public string UserCollectionName { get; set; } = null!;
 
 
     }
@@ -16,4 +17,6 @@
         public string BucketName { get; set; }
         public string Folder { get; set; }
     }
+
+
 }

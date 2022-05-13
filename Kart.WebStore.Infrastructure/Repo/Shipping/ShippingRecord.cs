@@ -23,5 +23,8 @@ namespace Kart.WebStore.Infrastructure.Repo.Shipping
         [BsonElement(ShippingTableScheme.ShippingPrice)]
         public decimal ShippingPrice { get; set; }
 
+        [BsonElement(ShippingTableScheme.ShippingAddress)]
+        public string ShippingAddress { get; set; }
+
     }
 }

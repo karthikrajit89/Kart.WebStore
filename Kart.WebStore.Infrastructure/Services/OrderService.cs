@@ -9,8 +9,7 @@ namespace Kart.WebStore.Infrastructure.Services
     {
         private readonly IOrderRepo _orderRepo;
 
-        public OrderService(IOptions<WebStoreParams> options,
-          IOrderRepo orderRepo)
+        public OrderService(IOrderRepo orderRepo)
         {
             _orderRepo = orderRepo;
         }

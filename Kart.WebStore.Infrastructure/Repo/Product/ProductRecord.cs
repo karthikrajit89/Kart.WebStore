@@ -34,5 +34,7 @@ namespace Kart.WebStore.Infrastructure.Repo.Product
         [BsonElement(ProductTableScheme.ImageUrl)]
         public string ImageUrl { get; set; }    
 
+        [BsonElement(ProductTableScheme.Description)]
+        public string Description { get; set; } 
     }
 }

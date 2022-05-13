@@ -9,8 +9,7 @@ namespace Kart.WebStore.Infrastructure.Services
     {
         private readonly IShippingRepo _shippingRepo;
         
-        public ShippingService (IOptions<WebStoreParams> options,
-            IShippingRepo shippingRepo)
+        public ShippingService (IShippingRepo shippingRepo)
         {
             _shippingRepo = shippingRepo;
         }

@@ -78,5 +78,23 @@ namespace Kart.WebStore.Api.Controllers
         {
             return await _productServices.GetAllProductsAsync();
         }
+
+        [HttpGet]
+        [Route("kartWebStore/GetCollectionById/{id}")]
+        [SwaggerResponse(200, Type = typeof(IEnumerable<Product>))]
+        [SwaggerResponse(500, "Something went wrong internally")]
+        public async Task<ActionResult<List<Product>>> GetAllById([FromRoute]Guid? id)
+        {
+            if(id == Guid.Empty || id is null )
+                throw new InvalidDataException("id not specified");
+            var products = await _productServices.GetAllProductsAsync();
+
+            List<Product> productCollection = new List<Product>();
+
+            productCollection.AddRange(products.Where(x => x.Id == id));
+
+            return productCollection;
+
+        }
     }
 }

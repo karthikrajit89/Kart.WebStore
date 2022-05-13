@@ -17,6 +17,7 @@ namespace Kart.WebStore.Infrastructure
         }
         public static IServiceCollection AddKartWebStoreServices(this IServiceCollection services)
         {
+           
             ConfigureDependencyInjection(services);
             return services;
         }
@@ -25,10 +26,12 @@ namespace Kart.WebStore.Infrastructure
         {
             services.AddSingleton<IOrderRepo, MongoDBOrderRepo>();
             services.AddSingleton<IProductRepo, MongoDBProductRepo>();  
-            services.AddSingleton<IShippingRepo, MongoDBShippingRepo>();    
+            services.AddSingleton<IShippingRepo, MongoDBShippingRepo>();
+            services.AddSingleton<IUserRepo, MongoDBUserRepo>();
             services.AddSingleton<IOrderServices, OrderService>();
             services.AddSingleton<IProductServices, ProductService>();
             services.AddSingleton<IShippingServices, ShippingService>();
+            services.AddSingleton<IUserService,UserService>();
             return services;
         }
     }

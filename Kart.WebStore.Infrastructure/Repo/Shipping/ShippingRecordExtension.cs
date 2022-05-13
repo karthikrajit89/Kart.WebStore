@@ -12,6 +12,7 @@ namespace Kart.WebStore.Infrastructure.Repo.Shipping
             shippingRecord.ShippingMode = shippers.Mode;
             shippingRecord.ShippingType = shippers.ShippingType;
             shippingRecord.ShippingPrice = shippers.ShippingPrice;
+            shippers.ShippingAddress = shippers.ShippingAddress;
             return shippingRecord;
         }
 
@@ -22,6 +23,7 @@ namespace Kart.WebStore.Infrastructure.Repo.Shipping
             shippers.ShippingType = data.ShippingType;
             shippers.Mode = data.ShippingMode;
             shippers.ShippingPrice = data.ShippingPrice;
+            shippers.ShippingAddress = data.ShippingAddress;
             return shippers;
         }
     }
