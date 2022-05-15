@@ -27,6 +27,13 @@ namespace Kart.WebStore.Infrastructure.Repo.Order
         [BsonElement(OrderTableScheme.UserId)]
         public string UserId { get; set; }
 
+        [BsonElement(OrderTableScheme.ShippingAddress)]
+        public string ShippingAddress { get; set; }
+
+        [BsonElement(OrderTableScheme.ShippingPrice)]   
+        public decimal ShippingPrice { get; set; }
+
+        
     }
 
     public class CartFinalRecord

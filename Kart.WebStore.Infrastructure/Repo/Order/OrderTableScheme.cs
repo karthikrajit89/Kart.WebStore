@@ -11,5 +11,6 @@ namespace Kart.WebStore.Infrastructure.Repo.Order
         public const string TotalPrice = "TotalPrice";
         public const string UserId = "UserId";
         public const string ShippingAddress = "ShippingAddress";
+        public const string ShippingPrice = "ShippingPrice";
     }
 }

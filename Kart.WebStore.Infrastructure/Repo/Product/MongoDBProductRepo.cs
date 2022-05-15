@@ -41,6 +41,7 @@ namespace Kart.WebStore.Infrastructure
 
         public async Task<Product> GetAsync(string id)
         {
+
             var product = await _productCollection.FindAsync(x => x.Id == id);
             return product.FirstOrDefaultAsync().Result?.ToModel();
         }

@@ -5,15 +5,17 @@ using Microsoft.Extensions.Options;
 
 namespace Kart.WebStore.Infrastructure.Services
 {
-    internal class UserService : IUserService
+    public class UserService : IUserService
     {
         private readonly IUserRepo _userRepo;
-
+        
 
         public UserService (IUserRepo userRepo)
         {
             _userRepo = userRepo;
         }
+
+      
 
         public Task<User> CreateAsync(User user)
         {

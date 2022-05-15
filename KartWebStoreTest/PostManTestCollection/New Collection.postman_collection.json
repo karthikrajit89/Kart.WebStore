@@ -1,0 +1,403 @@
+{
+	"info": {
+		"_postman_id": "571df3da-0c0b-4644-8cd3-2850ba25ca7c",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "https://localhost:7158/kartWebStore/CreateProduct",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"C13B557B-CAB3-47E9-A317-00DDD113BA46\",\n  \"name\": \"Linen Blazer\",\n  \"productType\": \"Blazer\",\n  \"brand\": \"Raymond\",\n  \"price\": 250,\n  \"newCollection\": true,\n  \"discountPercent\": 5,\n  \"imageUrl\": \"\"\n}"
+						},
+						"url": {
+							"raw": "https://localhost:7158/kartWebStore/CreateProduct",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7158",
+							"path": [
+								"kartWebStore",
+								"CreateProduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7158/kartWebStore/GetAllProducts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7158/kartWebStore/GetAllProducts",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7158",
+							"path": [
+								"kartWebStore",
+								"GetAllProducts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7158/kartWebstore/UpdateProduct",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": \"c13b557b-cab3-47e9-a317-00ddd113ba46\",\r\n        \"name\": \"Linen Blazer\",\r\n        \"productType\": \"Blazer\",\r\n        \"brand\": \"Raymond\",\r\n        \"price\": 350,\r\n        \"newCollection\": true,\r\n        \"discountPercent\": 15,\r\n        \"imageUrl\": \"\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7158/kartWebstore/UpdateProduct",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7158",
+							"path": [
+								"kartWebstore",
+								"UpdateProduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7158/kartWebStore/DeleteProduct/c13b557b-cab3-47e9-a317-00ddd113ba46",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7158/kartWebStore/DeleteProduct/c13b557b-cab3-47e9-a317-00ddd113ba46",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7158",
+							"path": [
+								"kartWebStore",
+								"DeleteProduct",
+								"c13b557b-cab3-47e9-a317-00ddd113ba46"
+							]
+						},
+						"description": "Api to Delete the product"
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7158/kartWebstore/GetProduct/3fa85f64-5717-4562-b3fc-2c963f66afa6",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7158/kartWebstore/GetProduct/3fa85f64-5717-4562-b3fc-2c963f66afa6",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7158",
+							"path": [
+								"kartWebstore",
+								"GetProduct",
+								"3fa85f64-5717-4562-b3fc-2c963f66afa6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7158/kartWebstore/GetCollectionById/3fa85f64-5717-4562-b3fc-2c963f66afa6",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7158/kartWebstore/GetCollectionById/3fa85f64-5717-4562-b3fc-2c963f66afa6",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7158",
+							"path": [
+								"kartWebstore",
+								"GetCollectionById",
+								"3fa85f64-5717-4562-b3fc-2c963f66afa6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "https://localhost:7158/kartWebstore/CreateOrder/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": \"\",\r\n  \"productId\": \"a2d57d4d-7cbe-45f4-b6c0-570a4fbae863\",\r\n  \"shipmentId\": \"\",\r\n  \"quantity\": 3, \r\n  \"totalPrice\": 1500 \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7158/kartWebstore/CreateOrder/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7158",
+							"path": [
+								"kartWebstore",
+								"CreateOrder",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7158/kartWebstore/GetAllOrders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7158/kartWebstore/GetAllOrders",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7158",
+							"path": [
+								"kartWebstore",
+								"GetAllOrders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7158/kartWebstore/GetOrder/64af5cb7-1143-4f16-b410-23791f01117b",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7158/kartWebstore/GetOrder/64af5cb7-1143-4f16-b410-23791f01117b",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7158",
+							"path": [
+								"kartWebstore",
+								"GetOrder",
+								"64af5cb7-1143-4f16-b410-23791f01117b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7158/kartWebstore/UpdateOrder",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": \"5846d014-6ee5-43b3-b103-9d155968184e\",\r\n  \"productId\": \"a2d57d4d-7cbe-45f4-b6c0-570a4fbae863\",\r\n  \"shipmentId\": \"81af412b-3740-41eb-93cc-04c954d8198b\",\r\n  \"quantity\": 2,\r\n  \"totalPrice\": 1000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7158/kartWebstore/UpdateOrder",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7158",
+							"path": [
+								"kartWebstore",
+								"UpdateOrder"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Shipping",
+			"item": [
+				{
+					"name": "https://localhost:7158/kartWebstore/CreateShipping",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": \"636d3169-76e8-4763-9bb7-7b5736f72975\",\r\n  \"mode\": \"Airway\",\r\n  \"shippingType\": \"pickup\",\r\n  \"shippingPrice\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7158/kartWebstore/CreateShipping",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7158",
+							"path": [
+								"kartWebstore",
+								"CreateShipping"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7158/kartWebStore/GetShipping/636d3169-76e8-4763-9bb7-7b5736f72975",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7158/kartWebStore/GetShipping/636d3169-76e8-4763-9bb7-7b5736f72975",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7158",
+							"path": [
+								"kartWebStore",
+								"GetShipping",
+								"636d3169-76e8-4763-9bb7-7b5736f72975"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7158/kartWebstore/GetAllShippings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7158/kartWebstore/GetAllShippings",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7158",
+							"path": [
+								"kartWebstore",
+								"GetAllShippings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7158/kartWebStore/UpdateShipping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"636d3169-76e8-4763-9bb7-7b5736f72975\",\r\n    \"mode\": \"Airway\",\r\n    \"shippingType\": \"Delivery\",\r\n    \"shippingPrice\": 20.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7158/kartWebStore/UpdateShipping",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7158",
+							"path": [
+								"kartWebStore",
+								"UpdateShipping"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7158/kartWebStore/DeleteShipping/e91004b9-d8e4-4b19-8dd0-5dd474acccb1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7158/kartWebStore/DeleteShipping/e91004b9-d8e4-4b19-8dd0-5dd474acccb1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7158",
+							"path": [
+								"kartWebStore",
+								"DeleteShipping",
+								"e91004b9-d8e4-4b19-8dd0-5dd474acccb1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": []
+		}
+	]
+}

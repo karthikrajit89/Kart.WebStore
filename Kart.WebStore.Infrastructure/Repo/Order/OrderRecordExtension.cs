@@ -20,6 +20,8 @@ namespace Kart.WebStore.Infrastructure
             record.Id = order.Id !=null ? order.Id.ToString() : string.Empty;
             record.TotalPrice = order.TotalPrice;
             record.UserId = order.UserId !=null ? order.UserId.ToString() : string.Empty;
+            record.ShippingAddress = order.ShippingAddress;
+            record.ShippingPrice = order.ShippingPrice;
             return record;
 
         }
@@ -38,7 +40,8 @@ namespace Kart.WebStore.Infrastructure
             order.ShipmentId = Guid.Parse(data.ShipmentId);
             order.Id = Guid.Parse(data.Id);
             order.TotalPrice = data.TotalPrice;
-            
+            order.ShippingPrice = data.ShippingPrice;
+            order.ShippingAddress = data.ShippingAddress;
             order.UserId = Guid.Parse(data.UserId);
             return order;
         }

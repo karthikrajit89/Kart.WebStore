@@ -6,6 +6,7 @@
         public List<CartFinal> CartFinalList { get; set; }
         public Guid? ShipmentId { get; set; }
         public decimal TotalPrice { get; set; }
+        public decimal ShippingPrice { get; set; }
         public string ShippingAddress { get; set; }
         public Guid? UserId { get; set; }
     }

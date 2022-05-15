@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kart.WebStore.Api", "Kart.W
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kart.WebStore.Infrastructure", "Kart.WebStore.Infrastructure\Kart.WebStore.Infrastructure.csproj", "{B4E8BE0C-BBFE-485E-9D74-30D6321B6175}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kart.WebStore.Services", "Kart.WebStore.Services\Kart.WebStore.Services.csproj", "{9FA2DE41-6C13-4125-9CA2-AF04538FBFF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kart.WebStore.Services", "Kart.WebStore.Services\Kart.WebStore.Services.csproj", "{9FA2DE41-6C13-4125-9CA2-AF04538FBFF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KartWebStoreTest", "KartWebStoreTest\KartWebStoreTest.csproj", "{1116764A-6F85-4175-ACD0-B24303A593EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{9FA2DE41-6C13-4125-9CA2-AF04538FBFF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FA2DE41-6C13-4125-9CA2-AF04538FBFF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FA2DE41-6C13-4125-9CA2-AF04538FBFF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1116764A-6F85-4175-ACD0-B24303A593EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1116764A-6F85-4175-ACD0-B24303A593EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1116764A-6F85-4175-ACD0-B24303A593EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1116764A-6F85-4175-ACD0-B24303A593EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
